@@ -16,8 +16,14 @@ describe('AgeSpace', () => {
     const ageSpace = new AgeSpace (42, "venus");
     expect(ageSpace.planetAge()).toEqual(63);
   });
+
   test("should calculate earth years passed", () => {
     const ageSpace = new AgeSpace (42, "earth");
     expect(ageSpace.planetAge()).toEqual(42);
+  });
+
+  test("should calculate Mars years passed", () => {
+    const ageSpace = new AgeSpace (42, "mars");
+    expect(ageSpace.planetAge()).toEqual(79);
   });
 })
