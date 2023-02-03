@@ -7,6 +7,8 @@ export default class AgeSpace {
   planetAge() {
     if(this.age !== 0 && this.planet === "mercury") {
     return (this.age / .24);
+  } else if (this.age !== 0 && this.planet === "venus") {
+    return Math.round(this.age / .67);
   } else {
     return this.age;
   }
