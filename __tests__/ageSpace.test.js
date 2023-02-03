@@ -12,4 +12,8 @@ describe('AgeSpace', () => {
   expect(ageSpace.planetAge()).toEqual(175);
   });
 
+  test("should calculate Venus years passed", () => {
+    const ageSpace = new AgeSpace (42, "venus");
+    expect(ageSpace.planetAge()).toEqual(67.74);
+  });
 })
