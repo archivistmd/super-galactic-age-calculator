@@ -13,6 +13,8 @@ export default class AgeSpace {
     return this.age;
   } else if (this.age !== 0 && this.planet === "mars") {
     return Math.round(this.age * 1.88);
+  } else if (this.age !== 0 && this.planet === "jupiter") {
+    return Math.round(this.age * 11.86);
   } else {
     return this.age;
   }
