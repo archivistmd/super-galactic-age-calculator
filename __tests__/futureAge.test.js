@@ -9,7 +9,7 @@ test("should calculate mercury time", () => {
 
 test("should calculate venus time", () => {
   const futureAge = new FutureAge (42, 56);
-  expect(futureAge.venustime).toEqual(23);
+  expect(futureAge.venusTime).toEqual(23);
 });
 
 });
