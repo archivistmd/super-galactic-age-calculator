@@ -26,4 +26,9 @@ describe('AgeSpace', () => {
     const ageSpace = new AgeSpace (42, "mars");
     expect(ageSpace.planetAge()).toEqual(79);
   });
+
+  test("should calculate Jupiter years passed", () => {
+    const ageSpace = new AgeSpace (42, "majupiter");
+    expect(ageSpace.planetAge()).toEqual(499);
+  });
 })
