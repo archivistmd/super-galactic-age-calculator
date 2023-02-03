@@ -8,8 +8,8 @@ describe('AgeSpace', () => {
   });
 
   test("should calculate Mercury years passed", () => {
-  const ageSpace = new AgeSpace(42);
-  expect(ageSpace.mercury).toEqual(175);
+  const ageSpace = new AgeSpace(42, "mercury");
+  expect(ageSpace.planetAge()).toEqual(175);
   });
 
 })
