@@ -12,9 +12,15 @@ test("should calculate venus time", () => {
   expect(futureAge.venusTime).toEqual(23);
 });
 
-test("should calculate mars time time", () => {
+test("should calculate mars time", () => {
   const futureAge = new FutureAge (42, 56);
   expect(futureAge.marsTime).toEqual(7);
+});
+
+
+test("should calculate jupiter time", () => {
+  const futureAge = new FutureAge (42, 56);
+  expect(futureAge.jupiterTime).toEqual(1);
 });
 
 });
