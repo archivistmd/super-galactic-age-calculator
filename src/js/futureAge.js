@@ -6,5 +6,6 @@ export default class FutureAge {
     this.venusTime = Math.round((this.yearsTill - age) / .62);
     this.earthTime= (this.yearsTill - this.age);
     this.marsTime = Math.round((this.yearsTill - age) / 1.88);
+    this.jupiterTime = Math.round((this.yearsTill - age) / 11.86);
   }
 }
