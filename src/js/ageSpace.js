@@ -5,16 +5,18 @@ export default class AgeSpace {
   }
 
   planetAge() {
-    if(this.age !== 0 && this.planet === "mercury") {
-    return (this.age / .24);
-  } else if (this.age !== 0 && this.planet === "venus") {
-    return Math.round(this.age / .67);
-  } else if (this.age !== 0 && this.planet === "earth") {
-    return this.age;
-  } else if (this.age !== 0 && this.planet === "mars") {
-    return Math.round(this.age * 1.88);
-  } else if (this.age !== 0 && this.planet === "jupiter") {
-    return Math.round(this.age * 11.86);
+    if(this.age !== 0) {
+      return this.age;
+    // if(this.age !== 0 && this.planet === "mercury") {
+    // return (this.age / .24);
+  // } else if (this.age !== 0 && this.planet === "venus") {
+  //   return Math.round(this.age / .67);
+  // } else if (this.age !== 0 && this.planet === "earth") {
+  //   return this.age;
+  // } else if (this.age !== 0 && this.planet === "mars") {
+  //   return Math.round(this.age * 1.88);
+  // } else if (this.age !== 0 && this.planet === "jupiter") {
+  //   return Math.round(this.age * 11.86);
   } else {
     return this.age;
   }
